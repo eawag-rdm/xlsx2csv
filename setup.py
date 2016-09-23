@@ -1,7 +1,7 @@
 import os
 from setuptools import setup
 
-with open('xlsx2csv.py', 'r') as f:
+with open('xlsx2csv/xlsx2csv.py', 'r') as f:
     for line in f:
         if line.find('__version__'):
             exec(line)
