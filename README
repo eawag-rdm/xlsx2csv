@@ -1,3 +1,13 @@
+-----------------------------------------------------------------------------------
+This fork has modified the the setup so that the command-line script is installed
+via the "enty_points" parameter in setup.py.
+
+This is to give Windows users a better installation experience.
+
+Installation:
+  pip install --user https://github.com/eawag-rdm/xlsx2csv.git
+
+-----------------------------------------------------------------------------------
 
 xlsx to csv converter (http://github.com/dilshod/xlsx2csv)
 
