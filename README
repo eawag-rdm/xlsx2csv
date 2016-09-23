@@ -5,7 +5,7 @@ via the "enty_points" parameter in setup.py.
 This is to give Windows users a better installation experience.
 
 Installation:
-  pip install --user https://github.com/eawag-rdm/xlsx2csv.git
+  pip install --user git+https://github.com/eawag-rdm/xlsx2csv.git
 
 -----------------------------------------------------------------------------------
 
