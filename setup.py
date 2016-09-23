@@ -3,7 +3,8 @@ from setuptools import setup
 
 with open('xlsx2csv/xlsx2csv.py', 'r') as f:
     for line in f:
-        if line.find('__version__'):
+        if line.find('__version__') >= 0:
+            print "line: {}".format(line)
             exec(line)
             version = __version__
             break
@@ -43,8 +44,8 @@ setup(
     packages=['xlsx2csv'],
     url="http://github.com/dilshod/xlsx2csv",
     entry_points = {
-        'console_scripts': ['xlsx2csv=xlsx2cs.xlsx2csv.main']
+        'console_scripts': ['xlsx2csv=xlsx2csv.xlsx2csv:main']
     },
-    zip_safe=false,
+    zip_safe=False,
     license='GPL-2+'
 )
