@@ -32,9 +32,6 @@ classifiers = [
     "Topic :: Office/Business",
     "Topic :: Utilities"
 ]
-data_files=[
-    ('test', []),
-]
 
 setup(
     name='xls2csv',
@@ -43,9 +40,11 @@ setup(
     author="Dilshod Temirkhdojaev",
     author_email="tdilshod@gmail.com",
     classifiers=classifiers,
-    py_modules=['xlsx2csv'],
-    data_files=data_files,
+    packages=['xlsx2csv'],
     url="http://github.com/dilshod/xlsx2csv",
-    ,
-    scripts=scripts
+    entry_points = {
+        'console_scripts': ['xlsx2csv=xlsx2cs.xlsx2csv.main']
+    },
+    zip_safe=false,
+    license='GPL-2+'
 )
